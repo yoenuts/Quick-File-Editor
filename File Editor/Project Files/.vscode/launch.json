@@ -12,11 +12,13 @@
         },
         {
             "type": "java",
-            "name": "JavaFx App",
+            "name": "App",
             "request": "launch",
             "mainClass": "App",
             "vmArgs": "--module-path \"C:/Users/le bratte/OneDrive/Desktop/erlein studies uwu/Computer Programming/javafx-sdk-18.0.2/lib\" --add-modules javafx.controls,javafx.fxml",
-            "projectName": "FileEditor_34a78988"
+            "projectName": "Project Files_63b09335"
         }
+
     ]
 }
+

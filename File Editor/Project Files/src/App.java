@@ -31,7 +31,8 @@ public class App extends Application {
     public void start(Stage stage){
         mainStage = stage;
         
-        textArea = new TextArea();
+        textArea = new TextArea(); 
+
         //set size
 
         //create a BorderPane
@@ -54,9 +55,21 @@ public class App extends Application {
     private MenuBar createMenuBar(){
         Menu fMenu = new Menu("File");
         //make a menu bar
-
         MenuBar mBar = new MenuBar(fMenu);
+        //put stuff in the menu bar
+
+        //new file edit
+        MenuItem newF = new MenuItem("New");
+        newF.setOnAction(e -> doNew());
+        fMenu.getItems().add(newF);
+
         return mBar;
+    }
+
+    //set the text area empty
+    private void doNew(){
+        textArea.setText("");
+        mainStage.setTitle("New, Untitled file");
     }
 
     
